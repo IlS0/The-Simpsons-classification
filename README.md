@@ -1,23 +1,29 @@
 # The-Simpsons-classification
 
-Свёрточная нейронная сеть, распознающая персонажей мультсериала "Симпсоны". Модель создана с помощью фреймворка __PyTorch__, точность предсказаний в районе 93%.
+Training a Convolutional Neural Network to recognize The Simpson TV Show characters. The model is made using __PytTorch__ framework. Final metric-value (f-measure) is about 93%. To have more detailed explanations, see the blog articles on Medium [Part 1](https://medium.com/alex-attia-blog/the-simpsons-character-recognition-using-keras-d8e1796eae36) and [Part 2](https://medium.com/alex-attia-blog/the-simpsons-characters-recognition-and-detection-part-2-c44f9d5abf37).
 
-## Сборка
+## Files description
 
-### Клонироване
+1. `simpsons.ipynb`: the notebook with CNN architecture, model training and testing;
+2. `simpsons_model.pth`: trained model.
 
-Клонируйте репозиторий с github, выполнив в терминале команду 
+## Build
+
+### Cloning
+
+Clone the repository from github by running the command in the terminal:
 `git clone https://github.com/IlS0/The-Simpsons-classification.git`.
 
-### Установка зависимостей
+### Requirements
 
-Распакуйте архив, перейдите в директорию и установите зависимости, выполнив следующую команду
+Unzip the archive, navigate to the directory and install the requirements by running the following command:
 `pip install -r requirements.txt`.
 
-### Скачивание датасета
+### Downloading the dataset
 
-[Скачайте](https://www.kaggle.com/datasets/alexattia/the-simpsons-characters-dataset) датасет, содержащий картинки 42 персонажей Симпсонов на Kaggle.
+[Download](https://www.kaggle.com/datasets/alexattia/the-simpsons-characters-dataset) the dataset containing pictures of 42 Simpsons characters from Kaggle.
 
-## Запуск
+## Run
 
-Для запуска необходимо, чтобы файл `simpsons.ipynb` и датасет находились в одной директории. Также убедитесь, что у вас установлен Jupyter Notebook. Гайд по его установке можно посмотреть [здесь](https://docs.jupyter.org/en/latest/install/notebook-classic.html#installing-jupyter-using-anaconda-and-conda).
+To run the notebook, the `simpsons.ipynb` file and the dataset must be in the same directory. Also make sure you have Jupyter Notebook installed. You can see the installation guide [here](https://docs.jupyter.org/en/latest/install/notebook-classic.html#installing-jupyter-using-anaconda-and-conda). 
+
